@@ -2,7 +2,7 @@
 const { connection } = require('./.env')
 
 module.exports = {
-
+  
     client: 'mysql',
     connection,
     pool: {
