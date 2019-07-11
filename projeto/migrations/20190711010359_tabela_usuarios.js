@@ -1,5 +1,5 @@
 
-exports.up = function(knex) {
+exports.up = function(knex, Promise) {
     return knex.schema.createTable('usarios', table => {
         table.increments('id').primary()
         table.string('nome').notNull()
@@ -11,6 +11,6 @@ exports.up = function(knex) {
     })
   };
   
-  exports.down = function(knex) {
+  exports.down = function(knex, Promise) {
     return knex.schema.dropTable('usuarios')
   };
